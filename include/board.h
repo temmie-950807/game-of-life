@@ -17,6 +17,7 @@ class Board{
         void resize(int);
         bool calculate(int, int);
         void next();
+        int get_size();
         std::vector<std::vector<Point>> get_all();
 
     private:
@@ -124,6 +125,10 @@ void Board::next(){
 
 std::vector<std::vector<Point>> Board::get_all(){
     return this->board;
+}
+
+int Board::get_size(){
+    return this->size;
 }
 
 #endif
